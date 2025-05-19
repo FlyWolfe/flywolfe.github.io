@@ -318,3 +318,10 @@ body { font-family: sans-serif; }
 .flickity-prev-next-button:disabled {
   display: none;
 }
+
+/* ---- particles.js container ---- */
+
+#particles-js {
+    /*background: black;*/
+    /*height: 100vh;*/
+}
