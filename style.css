@@ -2,9 +2,21 @@
 	box-sizing: border-box;
 }
 
+
+/* ---- particles.js container ---- */
+
+#particles-js {
+	position: absolute;
+	top:0;
+	left:0;
+    width:100%;
+    height:100%;
+    /*z-index:-1;*/
+}
+
 html, body {
 	min-height: 100%;
-	background: #0D0E17;
+	/*background: #0D0E17;
 	/*linear-gradient(-155deg, #212636 0%, #0D0E17 100%);/*linear-gradient(to bottom, #212636, #0D0E17);/* #0D0E17;*/
 	color: #DDDDDD;
 }
@@ -13,6 +25,10 @@ body {
 	font-size: 1.4rem;
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 	text-rendering: optimizeLegibility;
+	min-height: 100vh;
+	background: #0D0E17;
+	/*linear-gradient(-155deg, #212636 0%, #0D0E17 100%);/*linear-gradient(to bottom, #212636, #0D0E17);/* #0D0E17;*/
+    z-index:-2;
 }
 
 body, ul, ol, dl {
@@ -24,6 +40,16 @@ footer, header, nav, section, video {
 	display: block;
 }
 
+.container {
+	width: 50%;
+	min-width: 500px;
+	height: auto;
+	/*outline: dashed 0.5rem black;*/
+	margin: auto;
+	text-align: center;
+	padding: 2rem;
+}
+
 a {
 	color: #05DFDF;
 	font-size: 1rem;
@@ -31,6 +57,22 @@ a {
 
 a:visited {
 	color: #2f8a8a;
+}
+
+header {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+.title-block-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 130px;
+    padding-bottom: 130px;
+	margin: auto;
+	text-align: center;
 }
 
 h1 {
@@ -127,16 +169,6 @@ input[type="email"]:invalid {
 
 sub, sup {
 	line-height: 0;
-}
-
-.container {
-	width: 50%;
-	min-width: 500px;
-	height: auto;
-	/*outline: dashed 0.5rem black;*/
-	margin: auto;
-	text-align: center;
-	padding: 2rem;
 }
 
 .circle-button {
@@ -317,11 +349,4 @@ body { font-family: sans-serif; }
 /* hide disabled button */
 .flickity-prev-next-button:disabled {
   display: none;
-}
-
-/* ---- particles.js container ---- */
-
-#particles-js {
-    /*background: black;*/
-    /*height: 100vh;*/
 }
