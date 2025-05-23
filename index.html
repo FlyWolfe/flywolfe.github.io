@@ -6,168 +6,228 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Mathew Sherry - Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="flickity.css" media="screen">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   </head>
   <body>
-    <header style="position: relative">
-      <div id="particles-js">
-        <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-        <script src="app.js"></script>
+      <div class="container">
+        <div id="particles-js">
+          <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+        </div>
+
+        <header>
+          <div class="left">
+            <h1>Mathew Sherry</h1>
+          </div>
+
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+
+          <div class="box-icons">
+            <a href="https://www.linkedin.com/in/matsherry/"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://github.com/FlyWolfe"><i class='bx bxl-github'></i></a>
+            <a href="https://flywolfe.itch.io/"><i class="fa-brands fa-itch-io"></i></a>
+          </div>
+
+          <div class="menu-icon"><i class='bx bx-menu'></i></div>
+        </header>
+
+        <div class="sidebar">
+          <div class="close-icon">
+            <i class='bx bx-x'></i>
+          </div>
+
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+
+          <div class="social-icons">
+            <a href="https://flywolfe.itch.io/"><i class="fa-brands fa-itch-io"></i></a>
+            <a href="https://github.com/FlyWolfe"><i class='bx bxl-github'></i></a>
+          </div>
+        </div>
+
+        <section class="hero">
+          <div class="hero-info autoBlur">
+            <div class="hero-info-title">
+              <i class="fa-solid fa-gamepad"></i>
+              Game Developer Portfolio
+            </div>
+
+            <h1>Mathew Sherry <span class="gradient">Game Developer</span></h1>
+
+            <p>I am a game developer and software engineer with experience in
+              PC, Console, and Mobile development.
+            </p>
+
+            <button><i class='bx bx-send'></i>&nbsp;&nbsp;Send me an email</button>
+          </div>
+
+          <!--<div class="hero-vid-box">
+            <video class="autoBlur" autoplay loop muted plays-inline src="assets/videos/moon_rotation.mp4" type="video/mp4"></video>
+          </div>-->
+
+          <div class="scroll-down">
+
+          </div>
+        </section>
+
+        <section id="about" class="info-section">
+          <h1 class="section-title autoDisplay">About Me</h1>
+          <button onclick="window.location.href='assets/mathew-sherry_resume.pdf';"><i class='bx bxs-file-doc'></i> View Resume</button>
+          <div class="info-cards">
+            <div class="card">
+              <h1>Hi, I'm Mat!</h1>
+              <p>I am a game developer and software engineer with 11 years of professional experience. I have developed a wide array of applications and have a passion for designing and programming games and simulations.</p>
+            </div>
+            <div class="card">
+              <h1>Tech Stack</h1>
+              <h2>
+                <i class='bx bxl-unity'></i>&nbsp;
+                <i class='bx bxl-blender' ></i>&nbsp;
+                <i class='bx bxl-git' ></i>&nbsp;
+                <i class='bx bxl-visual-studio' ></i>&nbsp;
+                <object data="assets/OpenGL_logo.svg" type="image/svg+xml" width="60px" height="40px"></object>
+                <br>
+                <br>
+                <object data="assets/c-sharp-c-seeklogo.svg" type="image/svg+xml" width="35px" height="35px"></object>&nbsp;
+                <i class="fa-brands fa-rust"></i>&nbsp;
+                <i class='bx bxl-typescript' ></i>&nbsp;
+                <i class='bx bxl-c-plus-plus' ></i>&nbsp;
+                <i class='bx bxl-python' ></i>
+                <br>
+                <br>
+                ...and more
+              </h2>
+
+            </div>
+          </div>
+        </section>
+
+        <section id="projects" class="my-projects">
+          <h1 class="section-title autoDisplay">Professional Projects</h1>
+          <div class="project-card">
+            <div class="project-vid-box autoBlur">
+              <img src="assets/images/dig-cover.png" onclick="window.open('https://casino.draftkings.com/games/f99f2720-a53e-4fb0-a7a8-913950956123/dig/demo?returnUrl=%2F', '_blank');" alt="sauce-boss-cover-image">
+            </div>
+
+            <div class="project-info fadeInRight">
+              <h1><span class="gradient">Dig!</span></h1>
+              <p></p>
+
+              <button onclick="window.open('https://casino.draftkings.com/games/f99f2720-a53e-4fb0-a7a8-913950956123/dig/demo?returnUrl=%2F', '_blank');"><i class='bx bx-link-external'></i>&nbsp;Demo</button>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-vid-box autoBlur">
+              <img src="assets/images/Sauce_Boss_1.png" onclick="window.open('https://casino.draftkings.com/sauce-boss-bbq', '_blank');" alt="sauce-boss-cover-image">
+            </div>
+
+            <div class="project-info fadeInRight">
+              <h1><span class="gradient">Sauce Boss</span></h1>
+              <p></p>
+
+              <button onclick="window.open('https://casino.draftkings.com/games/9d5c81e2-cfb0-4902-a51b-a10a6fea6e30/sauce-boss-bbq/demo?returnUrl=%2F', '_blank');"><i class='bx bx-link-external'></i>&nbsp;Demo</button>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-vid-box autoBlur">
+              <img src="assets/images/rocket2-cover.png" onclick="window.open('https://casino.draftkings.com/rocket-2', '_blank');" alt="sauce-boss-cover-image">
+            </div>
+
+            <div class="project-info fadeInRight">
+              <h1><span class="gradient">Rocket 2</span></h1>
+              <p></p>
+
+              <button onclick="window.open('https://casino.draftkings.com/rocket-2', '_blank');"><i class='bx bx-link-external'></i>&nbsp;Website</button>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-vid-box autoBlur">
+              <img src="assets/images/facai-cover.png" onclick="window.open('https://casino.draftkings.com/games/e8660835-e367-48b1-ac35-6a9d87b5e2ff/fa-cai-fortunes/demo?returnUrl=%2F', '_blank');" alt="sauce-boss-cover-image">
+            </div>
+
+            <div class="project-info fadeInRight">
+              <h1><span class="gradient">Fa Cai Fortunes</span></h1>
+              <p></p>
+
+              <button onclick="window.open('https://casino.draftkings.com/games/e8660835-e367-48b1-ac35-6a9d87b5e2ff/fa-cai-fortunes/demo?returnUrl=%2F', '_blank');"><i class='bx bx-link-external'></i>&nbsp;Demo</button>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-vid-box autoBlur">
+              <iframe src="https://www.youtube.com/embed/5yq25GLKuKI?si=t89rw-vJqVAQH5J9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+            <div class="project-info fadeInRight">
+              <h1><span class="gradient">Lisa: Definitive Edition</span></h1>
+              <p></p>
+
+              <button onclick="window.open('https://serenityforge.com/games/lisa-definitive-edition', '_blank');"><i class='bx bx-link-external'></i>&nbsp;Website</button>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-vid-box autoBlur">
+              <iframe src="https://www.youtube-nocookie.com/embed/soEwoP20Bw8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+            <div class="project-info fadeInRight">
+              <h1><span class="gradient">Doki Doki Literature Club Plus!</span></h1>
+              <p></p>
+
+              <button onclick="window.open('https://serenityforge.com/games/doki-doki-literature-club-plus', '_blank');"><i class='bx bx-link-external'></i>&nbsp;Website</button>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-vid-box autoBlur">
+              <iframe src="https://www.youtube.com/embed/oDvbV0MztGs?si=48o9ziOuQDcT2I7E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+            <div class="project-info fadeInRight">
+              <h1><span class="gradient">Cobot Studio VR</span></h1>
+              <p></p>
+
+              <button onclick="window.open('https://www.cobotstudio.at/', '_blank');"><i class='bx bx-link-external'></i>&nbsp;Website</button>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-vid-box">
+              <iframe src="https://www.youtube.com/embed/zZ1OS39GQqE?si=1XGO_AhKW70_4v0z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+            <div class="project-info fadeInRight">
+              <h1><span class="gradient">Liquid Handling Robotics Automation</span></h1>
+              <p></p>
+
+              <button onclick="window.open('https://highresbio.com/', '_blank');"><i class='bx bx-link-external'></i>&nbsp;Website</button>
+            </div>
+          </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+          <h1 class="section-title autoDisplay">Let's Talk</h1>
+
+          <div class="social-box autoBlur">
+            <a><i class='bx bxs-phone-call'></i>(207) 419-8307</a>
+            <a href="mailto:mathew.j.sherry@gmail.com?subject=Portfolio Contact"><i class='bx bxs-envelope'></i>mathew.j.sherry@gmail.com</a>
+            <a href="https://www.linkedin.com/in/matsherry/"><i class='bx bxl-linkedin-square'></i>linkedin.com/in/matsherry/</a>
+            
+            <div class="social-icons">
+              <a href="https://flywolfe.itch.io/"><i class="fa-brands fa-itch-io"></i></a>
+              <a href="https://github.com/FlyWolfe"><i class='bx bxl-github'></i></a>
+            </div>
+          </div>
+
+          
+        </section>
       </div>
-      <div class="title-block-content">
-        <h1 class="title">Mathew Sherry</h1>
-        <p class="subtitle">Senior Software Engineer</p>
-      </div>
-  </header>
-  <main role="main">
-    <div class="container">
-        <br>
-        <br>
-        <h4 style="font-size: 1rem;">mathew.j.sherry@gmail.com</h4>
-        <br>
-        <a href="https://www.linkedin.com/in/matsherry/" style="padding-right: 3rem">
-          <img src="linkedin-image.png" width="47.04rem" height="40rem"></img></a>
-        <a href="https://github.com/FlyWolfe">
-          <img src="github-image.png"width="40rem" height="40rem"></img></a>
-        <br>
-        <br>
-        <br>
-        <h2>About Me</h2>
-        <hr>
-        <p>Hi! I’m Mat, a software developer from the United States with 11 years of professional programming experience.
-        </p>
-        <br>
-        <br>
-        <br>
-        <h2>Top Skills</h2>
-        <hr>
-        <a href="Mathew-Sherry_Resume.pdf">View Resume as PDF</a>
-        <br>
-        <h4>Languages</h4>
-        <div class="box-container">
-          C#
-        </div>
-        <div class="box-container">
-          Rust
-        </div>
-        <div class="box-container">
-          Typescript
-        </div>
-        <div class="box-container">
-          C++
-        </div>
-        <br>
-        <h4>Tools</h4>
-        <div class="box-container">
-          Git
-        </div>
-        <div class="box-container">
-          Unity
-        </div>
-        <div class="box-container">
-          Visual Studio
-        </div>
-        <div class="box-container">
-          Bevy
-        </div>
-        <br>
-        <br>
-        <br>
-        <h2>Professional Projects</h2>
-        <hr>
-        <br>
-        <div>
-          <img src="draftkings-casino.png"></img>
-        </div>
-        <br>
-        <div class="left">
-        <h3>Several DraftKings Casino Games</h3>
-        <div class="project-box-container">
-          Unity
-        </div>
-        <div class="project-box-container">
-          TypeScript
-        </div>
-        <div class="project-box-container">
-          C#
-        </div>
-        <div class="project-box-container">
-          GLSL
-        </div>
-        <br>
-        <p>
-          Work for Black Throne (a studio within DraftKings) in game and graphics programming
-          <br>
-          <br>
-          <a href="https://casino.draftkings.com/">Website Link</a>
-        </p>
-        </div>
-        <br>
-        <br>
-        <br>
-        <hr>
-        <br>
-        <div class="video-wrapper">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/5yq25GLKuKI?si=t89rw-vJqVAQH5J9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
-        <br>
-        <div class="left">
-        <h3>Lisa: The Painful and Lisa: The Joyful Definitive Editions</h3>
-        <div class="project-box-container">
-          Unity
-        </div>
-        <div class="project-box-container">
-          C#
-        </div>
-        <div class="project-box-container">
-          Ruby
-        </div>
-        <br>
-        <p>
-          Work for Serenity Forge in game programming and UI design
-          <br>
-          <br>
-          <a href="https://serenityforge.com/games/lisa-definitive-edition">Link to the Game</a>
-        </p>
-        </div>
-        <br>
-        <br>
-        <br>
-        <hr>
-        <br>
-        <div class="video-wrapper">
-          <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/soEwoP20Bw8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-        <br>
-        <div class="left">
-        <h3>Doki Doki Literature Club Plus!</h3>
-        <div class="project-box-container">
-          Unity
-        </div>
-        <div class="project-box-container">
-          C#
-        </div>
-        <div class="project-box-container">
-          Python
-        </div>
-        <br>
-        <p>
-          Work for Serenity Forge in game programming and UI design
-          <br>
-          <br>
-          <a href="https://serenityforge.com/games/doki-doki-literature-club-plus">Link to the Game</a>
-        </p>
-        </div>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-    </div>
-  </main>
+  <script src="app.js"></script>
+  <script src="https://kit.fontawesome.com/93d4639ab0.js" crossorigin="anonymous"></script>
   </body>
-  <script src="flickity.pkgd.min.js"></script>
 </html>
